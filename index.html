@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Sahabatku 🤍</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Musik -->
+    <audio id="music" loop>
+        <source src="lagu.mp3" type="audio/mpeg">
+    </audio>
+
+    <button class="music-btn" onclick="toggleMusic()">🎵</button>
+
+    <!-- Slide -->
+    <div class="slider">
+
+        <!-- Slide 1 -->
+        <section class="slide active">
+            <img src="foto1.jpg" alt="Foto bersama">
+            <div class="content">
+                <p class="small">SLIDE 01</p>
+                <h1>Untuk Sahabatku 🤍</h1>
+                <p>
+                    Terima kasih sudah menjadi salah satu
+                    orang yang selalu ada di setiap cerita.
+                </p>
+                <button onclick="nextSlide()">Lanjut →</button>
+            </div>
+        </section>
+
+        <!-- Slide 2 -->
+        <section class="slide">
+            <img src="foto2.jpg" alt="Kenangan bersama">
+            <div class="content">
+                <p class="small">SLIDE 02</p>
+                <h1>Banyak Cerita</h1>
+                <p>
+                    Dari hal kecil sampai hal yang nggak pernah
+                    kita lupakan. Semoga semua kenangan ini
+                    tetap menjadi cerita yang indah.
+                </p>
+                <button onclick="nextSlide()">Lanjut →</button>
+            </div>
+        </section>
+
+        <!-- Slide 3 -->
+        <section class="slide">
+            <img src="foto3.jpg" alt="Foto kenangan">
+            <div class="content">
+                <p class="small">SLIDE 03</p>
+                <h1>Tetap Jadi Sahabat 🤝</h1>
+                <p>
+                    Mungkin nanti kita punya kesibukan masing-masing,
+                    tapi semoga persahabatan ini tetap sama.
+                </p>
+                <button onclick="restartSlide()">↻ Ulangi</button>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
